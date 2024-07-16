@@ -41,12 +41,14 @@ const Hero = () => {
                     </div>
                     {/* Profile Image Section */}
                     <div className="hidden lg:block lg:w-1/2 lg:p-8">
-                        <div className="flex justify-center">
+                        <div className="flex justify-center mb-20">
                             <motion.img
                                 initial={{ x: 100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 1, delay: 1.2 }}
-                                src={profilePic} alt="Ipek Kaya Profile" className="max-w-full h-auto" />
+                                src={profilePic} alt="Ipek Kaya Profile"
+                                className="w-3/4 h-600 max-w-900" />
+
                         </div>
                     </div>
                 </div>
