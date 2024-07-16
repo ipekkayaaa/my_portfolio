@@ -1,6 +1,6 @@
-import project1 from "../assets/projects/project-1.jpg";
+import project1 from "../assets/projects/twitterApp.jpg";
 import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
+import project3 from "../assets/projects/weatherApp.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `Let's Create Together`;
@@ -34,25 +34,28 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Twitter Clone",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "This project is a Twitter clone built using Laravel, PHP, JavaScript, and MySQL. It replicates the core functionalities of Twitter, allowing users to post tweets, follow other users, like tweets, and engage in real-time interactions.",
+    technologies: ["Php", "JavaScript", "MySQL", "HTML", "CSS"],
+    link: "https://github.com/ipekkayaaa/twitter-clone"
   },
   {
-    title: "Task Management App",
+    title: "Cardio Good Fitness Data Analysis",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Conducted a visual analysis of the Cardio Good Fitness dataset, created by the market research team at AdRight. Investigated customer characteristics across three treadmill products using R programming. Generated visual insights through boxplots, outlier analysis, correlation matrix, frequency distribution, pie charts, and heatmaps.",
+    technologies: ["R", "Data Visualization"],
+    link: "https://github.com/ipekkayaaa/Fitness-Product-Data-Analysis",
   },
   {
-    title: "Portfolio Website",
+    title: "Weather Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A Python Tkinter application that fetches current weather data using the OpenWeatherMap API based on user-entered city names. Displays real-time temperature, wind speed, humidity, weather description, and pressure.",
+    technologies: ["Python", "Tkinter", "API"],
+    link: "https://github.com/ipekkayaaa/Weather_App_API_Python",
   },
   {
     title: "Blogging Platform",

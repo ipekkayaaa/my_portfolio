@@ -1,8 +1,8 @@
-
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb, SiPhp, SiLaravel, SiJavascript, SiAmazonaws, SiDocker, SiPython } from "react-icons/si";
+import { FaNodeJs, FaGitAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+
 
 
 const iconVariants = (duration) => ({
@@ -57,6 +57,48 @@ const Technologies = () => {
                         animate="animate"
                     >
                         <FaNodeJs className="text-7xl text-green-500" />
+                    </motion.div>
+                    <motion.div className="rounded-2xl border-4 border-neutral-800 p-4"
+                        variants={iconVariants(3)}
+                        initial="initial"
+                        animate="animate"
+                    >
+                        <SiPhp className="text-7xl text-purple-500" />
+                    </motion.div>
+                    <motion.div className="rounded-2xl border-4 border-neutral-800 p-4"
+                        variants={iconVariants(2)}
+                        initial="initial"
+                        animate="animate"
+                    >
+                        <SiLaravel className="text-7xl text-red-500" />
+                    </motion.div>
+                    <motion.div className="rounded-2xl border-4 border-neutral-800 p-4"
+                        variants={iconVariants(1)}
+                        initial="initial"
+                        animate="animate"
+                    >
+                        <SiJavascript className="text-7xl text-yellow-500" />
+                    </motion.div>
+                    <motion.div className="rounded-2xl border-4 border-neutral-800 p-4"
+                        variants={iconVariants(3)}
+                        initial="initial"
+                        animate="animate"
+                    >
+                        <SiPython className="text-7xl text-green-500" />
+                    </motion.div>
+                    <motion.div className="rounded-2xl border-4 border-neutral-800 p-4"
+                        variants={iconVariants(2)}
+                        initial="initial"
+                        animate="animate"
+                    >
+                        <SiAmazonaws className="text-7xl text-orange-500" />
+                    </motion.div>
+                    <motion.div className="rounded-2xl border-4 border-neutral-800 p-4"
+                        variants={iconVariants(1)}
+                        initial="initial"
+                        animate="animate"
+                    >
+                        <SiDocker className="text-7xl text-blue-500" />
                     </motion.div>
                 </motion.div>
             </motion.div>
