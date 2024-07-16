@@ -17,12 +17,12 @@ const Hero = () => {
                 {/* Content Section */}
                 <div className="w-full lg:flex lg:items-center">
                     <div className="lg:w-1/2">
-                        <div className="flex flex-col items-center lg:items-start">
+                        <div className="flex flex-col items-center lg:items-start ">
                             <motion.h1
                                 variants={container(0)}
                                 initial="hidden"
                                 animate="visible"
-                                className="pb-16 text-6xl font-thin tracking-tight lg:mt-10 lg:text-10xl">
+                                className="pb-16 text-6xl font-bold tracking-tight lg:mt-10 lg:text-10xl">
                                 Ipek Kaya
                             </motion.h1>
                             <motion.span
