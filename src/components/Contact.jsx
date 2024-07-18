@@ -10,7 +10,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-            >Get In Tough</motion.h1>
+            >Get In Touch</motion.h1>
             <div className="text-center tracking-tighter">
                 <motion.p className="my-4"
                     whileInView={{ opacity: 1, x: 0 }}
