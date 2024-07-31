@@ -1,12 +1,12 @@
 import logo from "../assets/ipekLogo.png";
-import { FaLinkedin, FaGithub, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
     return (
-        <nav className="mb-20 flex items-center justify-between py-6">
+        <nav className="navbar mb-20 flex items-center justify-between py-6">
             <div className="flex items-center">
-                <img className="mx-2 w-40 h-70" src={logo} alt="logo" />
+                <img className="mx-2 w-24 h-auto" src={logo} alt="logo" />
             </div>
             <div className="flex items-center space-x-6">
                 {/* Scroll Links to different sections */}
@@ -78,6 +78,14 @@ const Navbar = () => {
                 </a>
             </div>
             <style jsx>{`
+                .navbar {
+                    color: #FBFBFB; /* Default text color */
+                    height: 100px; /* Set a fixed height */
+                    display: flex;
+                    align-items: center; /* Vertically align items */
+                    margin-top:20px;
+                    border-radius: 10px;
+                }
                 .nav-link {
                     text-decoration: none;
                     color: #FBFBFB; /* Default text color */

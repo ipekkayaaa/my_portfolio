@@ -10,7 +10,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-            >Get In Touch</motion.h1>
+            >Contact</motion.h1>
             <div className="text-center tracking-tighter">
                 <motion.p className="my-4"
                     whileInView={{ opacity: 1, x: 0 }}
@@ -24,7 +24,7 @@ const Contact = () => {
                     transition={{ duration: 1 }}
 
                 >{CONTACT.phoneNo}</motion.p>
-                <a herf="#" className="border-b">
+                <a herf="#">
                     {CONTACT.email}
                 </a>
             </div>
