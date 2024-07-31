@@ -10,38 +10,55 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-            >Experience</motion.h1>
+            >
+                Experience
+            </motion.h1>
             <div>
                 {EXPERIENCES.map((experience, index) => (
                     <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                        <motion.div className="w-full lg:w-1/4"
+                        <motion.div
+                            className="w-full lg:w-1/4"
                             whileInView={{ opacity: 1, y: 0 }}
                             initial={{ opacity: 0, y: -100 }}
                             transition={{ duration: 1 }}
                         >
-                            <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
+                            <p className="mb-2 text-sm text-white">{experience.year}</p>
                         </motion.div>
-                        <motion.div className="w-full max-w-xl lg:w-3/4"
+                        <motion.div
+                            className="w-full max-w-xl lg:w-3/4"
                             whileInView={{ opacity: 1, y: 0 }}
                             initial={{ opacity: 0, y: 100 }}
                             transition={{ duration: 1 }}
                         >
-                            <h6 className="mb-2 fonr-semibold">
+                            <h6 className="mb-2 text-lg font-semibold">
                                 {experience.role} -{" "}
                                 <span className="text-sm text-purple-100">
                                     {experience.company}
                                 </span>
                             </h6>
-                            <p className="mb-4 text-neutral-400">{experience.description}</p>
-                            {experience.technologies.map((tech, index) => (
-                                <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medion text-purple-800">{tech}</span>
-                            ))}
+                            <ul className="mb-4 text-neutral-400 list-disc list-inside">
+                                {experience.description.split('•').filter(Boolean).map((sentence, index) => (
+                                    <li key={index} className="mb-2">
+                                        {sentence.trim()}
+                                    </li>
+                                ))}
+                            </ul>
+                            <div>
+                                {experience.technologies.map((tech, index) => (
+                                    <span
+                                        key={index}
+                                        className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-400"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                         </motion.div>
                     </div>
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
-export default Experience
+export default Experience;

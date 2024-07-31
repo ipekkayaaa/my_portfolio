@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/image1.png";
+import profilePic from "../assets/about.png";
 import { motion } from "framer-motion"
 
 const container = (delay) => ({
@@ -12,7 +12,7 @@ const container = (delay) => ({
 })
 const Hero = () => {
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+        <div className="pb-0 lg:mb-35">
             <div className="flex flex-wrap">
                 {/* Content Section */}
                 <div className="w-full lg:flex lg:items-center">
