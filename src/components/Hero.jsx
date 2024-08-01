@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/about.png";
+import laptopPic from "../assets/laptop.png";
 import { motion } from "framer-motion"
 
 const container = (delay) => ({
@@ -12,7 +12,7 @@ const container = (delay) => ({
 })
 const Hero = () => {
     return (
-        <div className="pb-0 lg:mb-35">
+        <div className="pb-0 lg:mb-35 -mt-10">
             <div className="flex flex-wrap">
                 {/* Content Section */}
                 <div className="w-full lg:flex lg:items-center">
@@ -46,16 +46,15 @@ const Hero = () => {
                                 initial={{ x: 100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 1, delay: 1.2 }}
-                                src={profilePic} alt="Ipek Kaya Profile"
+                                src={laptopPic} alt="Ipek Kaya Profile"
                                 className="w-3/4 h-600 max-w-900" />
-
                         </div>
                     </div>
                 </div>
                 {/* Profile Image Section (mobile view) */}
-                <div className="w-full lg:hidden">
+                <div className="w-full lg:hidden mb-16">
                     <div className="flex justify-center">
-                        <img src={profilePic} alt="Ipek Kaya Profile" className="max-w-full h-auto" />
+                        <img src={laptopPic} alt="Ipek Kaya Profile" className="max-w-full h-auto" />
                     </div>
                 </div>
             </div>

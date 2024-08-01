@@ -4,11 +4,11 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
     return (
-        <nav className="navbar mb-20 flex items-center justify-between py-6">
+        <nav className="navbar mb-20 flex flex-wrap items-center justify-between py-6 px-4">
             <div className="flex items-center">
-                <img className="mx-2 w-24 h-auto" src={logo} alt="logo" />
+                <img className="w-24 h-auto" src={logo} alt="logo" />
             </div>
-            <div className="flex items-center space-x-6">
+            <div className="flex flex-wrap items-center space-x-4 md:space-x-10">
                 {/* Scroll Links to different sections */}
                 <ScrollLink
                     activeClass="active"
@@ -17,21 +17,21 @@ const Navbar = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="nav-link"
+                    className="nav-link text-l"
                 >
                     About Me
                 </ScrollLink>
-                <ScrollLink
+                {/* <ScrollLink
                     activeClass="active"
                     to="tech"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="nav-link"
+                    className="nav-link text-l"
                 >
                     Tech Stack
-                </ScrollLink>
+                </ScrollLink> */}
                 <ScrollLink
                     activeClass="active"
                     to="experience"
@@ -39,7 +39,7 @@ const Navbar = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="nav-link"
+                    className="nav-link text-l"
                 >
                     Experience
                 </ScrollLink>
@@ -50,7 +50,7 @@ const Navbar = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="nav-link"
+                    className="nav-link text-l"
                 >
                     Projects
                 </ScrollLink>
@@ -61,12 +61,12 @@ const Navbar = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="nav-link"
+                    className="nav-link text-l"
                 >
                     Contact
                 </ScrollLink>
             </div>
-            <div id="social-icons" className="m-8 flex items-center justify-center gap-4 text-2xl">
+            <div id="social-icons" className="flex flex-wrap items-center justify-center gap-4 text-2xl mt-4">
                 <a href="https://www.linkedin.com/in/ipek-kaya/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="social-icon" />
                 </a>
@@ -80,10 +80,10 @@ const Navbar = () => {
             <style jsx>{`
                 .navbar {
                     color: #FBFBFB; /* Default text color */
-                    height: 100px; /* Set a fixed height */
+                    height: auto; /* Allow height to adjust based on content */
                     display: flex;
                     align-items: center; /* Vertically align items */
-                    margin-top:20px;
+                    margin-top: 20px;
                     border-radius: 10px;
                 }
                 .nav-link {
